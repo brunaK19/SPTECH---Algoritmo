@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pizza</title>
+</head>
+<body>
+    <div class="content">
+    <h1>Pizzaria</h1>
+    <p>Digite o valor da pizza:</p>
+    <input type="text" id="input_dinheiro"><br><br>
+    <p>Digite a quantidade de amigos:</p>
+    <input type="text" id="input_migos"><br><br>
+
+    <button onclick="pix()">#lovePizza</button>
+</div>
+</body>
+<script>
+
+    function pix(){
+        var migos = Number(input_migos.value);
+        var dinheiro = Number(input_dinheiro.value);
+        var valor = dinheiro/migos;
+
+        alert('Cada um dos '+migos+ ' amigos vai pagar R$'+valor)
+    }
+
+</script>
+</html>
+
