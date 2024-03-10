@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Frequência</title>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Aluno vs. Turista</h1>
+        Digite sua frequência
+        <input id="input_freq"><br><br>
+        <div id="div_result"></div>
+        <button onclick="analiseFreq()">Analisar frequência</button><br><br>
+    </div>
+</body>
+
+</html>
+<script>
+
+    function analiseFreq() {
+        var frequencia = Number(input_freq.value)
+
+        if (frequencia < 50) {
+
+            div_result.innerHTML = `<img style="height: 250px;" src="https://cdn01.buxtonco.com/news/2661/istock-665028882__large.jpg" alt="turista">`
+
+        } else {
+
+            div_result.innerHTML = `<img style="height: 250px;" src="https://concept3d.com/wp-content/uploads/2023/08/Student-with-more-access-to-academic-resources-due-to-efforts-to-boost-student-retention-and-persistence.jpg" alt="estudante">`
+        }
+    }
+</script>

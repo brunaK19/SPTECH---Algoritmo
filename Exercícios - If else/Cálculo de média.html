@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Média</title>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Cálculo de média</h1>
+        Digite sua 1º nota
+        <input id="input_n1"><br><br>
+
+        Digite sua 2º nota
+        <input id="input_n2"><br><br>
+        <div id="div_result"></div>
+        <button onclick="calcMedia()">Verificar situação</button><br><br>
+    </div>
+</body>
+
+</html>
+<script>
+
+
+    function calcMedia() {
+        var n1 = Number(input_n1.value);
+        var n2 = Number(input_n2.value);
+
+        var media = (n1 + n2) / 2
+
+        if (media > 6) {
+
+            div_result.innerHTML = `Parabéns, aprovado!`
+
+        } else {
+
+            div_result.innerHTML = `Tente outra vez...`
+        }
+    }
+</script>
