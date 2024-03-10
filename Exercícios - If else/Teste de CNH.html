@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CNH</title>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Teste de CNH</h1>
+        Digite seu nome
+        <input id="input_nome"><br>
+        Digite sua idade
+        <input id="input_idade"><br>
+        <button onclick="checkIdade()">Avaliar aluno</button><br><br>
+        <div id="div_result"></div>
+    </div>
+</body>
+
+</html>
+<script>
+
+    function checkIdade() {
+        var idade = Number(input_idade.value)
+        var nome = input_nome.value
+        if (idade >= 18) {
+            div_result.innerHTML = `${nome} vamos tirar cnh?`
+        } else {
+            div_result.innerHTML = `${nome} vai jogar playstation!`
+        }
+    }
+</script>
