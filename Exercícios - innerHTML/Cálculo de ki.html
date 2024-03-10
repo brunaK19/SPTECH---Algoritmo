@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Calcular ki</title>
+</head>
+
+<body>
+  <div class="content">
+    <h1>Cálculo de KI</h1>
+    <p>Digite seu ki base:</p>
+    <input type="text" id="input_forca"><br>
+    <p>Tranformar em...</p><br>
+    
+    <button onclick="ki()">SSJ</button>
+    <button onclick="ki2()">SSJ2</button>
+    <button onclick="ki3()">SSJ3</button><br>
+    <div id="resultado"></div>
+  </div>
+
+
+</body>
+<script>
+
+  function ki() {
+
+    var forca = Number(input_forca.value);
+    var sj = forca * 50;
+
+    resultado.innerHTML = ` Após se transformar em SSJ, o ki desse Sayajin passa a ser de ${sj}`
+  }
+
+  function ki2() {
+    var forca = Number(input_forca.value);
+    var sj2 = forca * 100;
+
+    resultado.innerHTML = ` Após se transformar em SSJ2, o ki desse Sayajin passa a ser de ${sj2}`
+  }
+
+  function ki3() {
+    var forca = Number(input_forca.value);
+    var sj3 = forca * 200;
+
+    resultado.innerHTML = ` Após se transformar em SSJ3, o ki desse Sayajin passa a ser de ${sj3}`
+  }
+
+
+
+</script>
+
+</html>

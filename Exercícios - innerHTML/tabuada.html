@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tabuada</title>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Tabuada</h1>
+        <p>Digite um número</p>
+        <input id="input_num"><br><br>
+        <button onclick="tabu()">Ver Tabuada</button><br>
+        <div id="calcNum"></div>
+    </div>
+</body>
+
+</html>
+<script>
+    function tabu() {
+
+        var num = Number(input_num.value)
+
+        var um = num * 1
+        var dois = num * 2
+        var tres = num * 3
+        var quatro = num * 4
+        var cinco = num * 5
+        var seis = num * 6
+        var sete = num * 7
+        var oito = num * 8
+        var nove = num * 9
+
+        calcNum.innerHTML = num + `x1 = ` + um + `<br> 
+        `+ num + `x2 = ` + dois + `<br>
+        `+ num + `x3 = ` + tres + `<br> 
+        `+ num + `x4 = ` + quatro + `<br> 
+        `+ num + `x5 = ` + cinco + `<br> 
+        `+ num + `x6 = ` + seis + `<br>
+        `+ num + `x7 = ` + sete + `<br> 
+        `+ num + `x8 = ` + oito + `<br> 
+        `+ num + `x9 = ` + nove + `<br>`
+    }
+
+</script>

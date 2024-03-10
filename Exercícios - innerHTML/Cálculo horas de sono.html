@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sono</title>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Cálculo de sono</h1>
+        <p>Horas de sono</p>
+        <input id="input_horas"><br><br>
+        <div id="resultado"></div>
+        <button onClick="calcSono()">Horas de sono</button>
+    </div>
+</body>
+
+</html>
+<script>
+    function calcSono() {
+
+        var horas = Number(input_horas.value)
+
+        var fase1 = horas * 0.05
+        var fase2 = horas * 0.45
+        var fase3 = horas * 0.30
+        var faseR = horas * 0.20
+
+        resultado.innerHTML = `Você dormiu: <br>
+    <b>`+ fase1 + ` </b>horas na fase 1<br>
+    <b>`+ fase2 + ` </b> horas na fase 2<br>
+    <b>`+ fase3 + ` </b>horas na fase 3<br>
+    <b>`+ faseR + ` </b> horas na fase <b>REM<b>`
+    }
+</script>
